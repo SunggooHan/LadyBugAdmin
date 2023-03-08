@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/gachon_icon"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/login_title"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:fontFamily="@font/godo_m"/>
+
+    <EditText
+        android:id="@+id/checkId"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/edge"
+        android:hint="@string/entrance_code"
+        android:inputType="numberPassword"
+        android:textSize="20dp"
+        android:fontFamily="@font/godo_m"/>
+
+    <RadioGroup
+        android:id="@+id/enterModeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radAdmin"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/admin"
+            android:textSize="16dp"
+            android:fontFamily="@font/godo_m"/>
+        <RadioButton
+            android:id="@+id/radDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/driver"
+            android:textSize="16dp"
+            android:fontFamily="@font/godo_m"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_marginTop="80dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_button"
+        android:textColor="#ffffff"
+        android:text="@string/login"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/godo_m"
+        android:gravity="center"/>
+
+</LinearLayout>

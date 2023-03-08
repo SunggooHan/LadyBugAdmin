@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!-- For debugging -->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- ================================= -->
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/gachon_icon"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/driver_title"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        android:fontFamily="@font/godo_m"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/bus_number"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/godo_m"/>
+
+    <Spinner
+        android:id="@+id/busNumberSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:entries="@array/bus_spinner"
+        android:background="@drawable/edge"/>
+
+    <LinearLayout
+        android:id="@+id/currentLocationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/current_location"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/godo_m"/>
+        <TextView
+            android:id="@+id/currentLocationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/godo_m"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/startStationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/start_station"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/godo_m"/>
+        <Spinner
+            android:id="@+id/startStationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/edge"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/godo_m"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/current_state"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/godo_m"/>
+
+    <TextView
+        android:id="@+id/currentStateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:padding="18dp"
+        android:background="@drawable/state_background_active"
+        android:text="@string/in_operation"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:fontFamily="@font/godo_m"
+        android:textAlignment="center"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/changeStatusButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/state_background_unactive"
+        android:text="@string/stop_driving"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

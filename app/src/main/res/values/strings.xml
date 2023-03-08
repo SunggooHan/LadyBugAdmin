@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">LadybugAdmin</string>
+    <string name="login_title"><font color="#3772f7">가천</font> <font color="#ea1b1b">셔틀</font> <font color="#000000">버스 관리</font></string>
+    <string name="entrance_code">로그인 코드</string>
+    <string name="admin">관리자</string>
+    <string name="driver">운전자</string>
+    <string name="login">로그인</string>
+
+    <string name="driver_title"><font color="#ea1b1b">셔틀</font> <font color="#000000">버스</font> <font color="#3772f7">운전자</font></string>
+    <string-array name="bus_spinner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="bus_number">버스 번호</string>
+    <string name="current_state">현재 상태</string>
+    <string name="current_location">현재 위치</string>
+    <string name="start_station">시작 정류장</string>
+    <string name="in_operation">운행 중</string>
+    <string name="stopped">중지됨</string>
+    <string name="start_driving">운행 시작</string>
+    <string name="stop_driving">운행 종료</string>
+
+    <string name="admin_main_title">관리자</string>
+    <string name="notice_management">공지사항 관리</string>
+    <string name="bus_location">버스 위치 조회</string>
+    <string name="manage_info">로그인 정보 관리</string>
+    <string name="write">작성하기</string>
+
+    <string name="title_hint">제목을 입력하세요...</string>
+    <string name="contents_hint">내용을 입력하세요...</string>
+    <string name="upload">작성완료</string>
+
+    <string name="driver_code_management">운전자 코드 관리</string>
+    <string name="add_driver">운전자 추가</string>
+    <string name="admin_abbrev">관리자</string>
+    <string name="code">코드</string>
+    <string name="admin_info_management">관리자 코드 관리</string>
+    <string name="add_admin">관리자 추가</string>
+    <string name="save">저장하기</string>
+
+    <string name="add_code_title">코드 추가하기</string>
+</resources>

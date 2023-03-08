@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "217290024510",
+    "firebase_url": "https://swengineering-86e20-default-rtdb.firebaseio.com",
+    "project_id": "swengineering-86e20",
+    "storage_bucket": "swengineering-86e20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217290024510:android:1f2cf584156474b1b9536f",
+        "android_client_info": {
+          "package_name": "com.sweteam5.ladybugadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217290024510-i4beomgdge8gtg8jcjp8jligfpgepekg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sweteam5.ladybugadmin",
+            "certificate_hash": "bc23e3c5a4771fdef588ef5e482d3385ecd4cbe6"
+          }
+        },
+        {
+          "client_id": "217290024510-rbpr5c4e2u47dbsn3u6fske319nn034c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnBi7Fg7VzTGqTMnSbHRx4TWgBzrSht0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217290024510-rbpr5c4e2u47dbsn3u6fske319nn034c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noticeCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin = "16dp">
+    <LinearLayout
+        android:id="@+id/noticeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/underbar_button">
+        <TextView
+            android:id="@+id/noticeTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:text="6월 10일 셔틀버스 운영중지 안내"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:fontFamily="@font/godo_m"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/noticeDateTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:text="2022.06.10 11:20"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:id="@+id/deleteNoticeButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/delete"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
